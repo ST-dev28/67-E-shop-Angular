@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './models/product';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'E-shop-Angular';
+  public product: Product;
+
+  public constructor() {
+    this.product = new Product("Kamuolys", 1, 20, 10);
+  }
 }
