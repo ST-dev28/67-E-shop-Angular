@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="produktas" *ngIf="product.disc > 0" [ngClass]="{'disc': product.disc > 0}">
+  <div class="produktas" [ngClass]="{'disc': product.disc > 0}">
     <img src="https://www.ermitazas.lt/out/pictures/master/product/1/323016.jpg" alt="Produktas">
     <h3 class="pavadinimas">{{product.name}}</h3>
     <div class="kiekis">{{product.qty}} pcs</div>
